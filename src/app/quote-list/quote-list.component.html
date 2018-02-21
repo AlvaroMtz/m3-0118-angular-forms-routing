@@ -1,0 +1,11 @@
+<div [ngStyle]="colorStyle">
+  <app-quote-item *ngFor="let fr of frasesDeMarc, let i=index" 
+                  [q]="fr" 
+                  [damage]="fr.damage"
+                  (deleteEvent)="deleteItem($event)"
+                  [id]="i"
+                  ></app-quote-item>
+
+  <button (click)="deleteall($event)"> DeleteAll </button>
+
+</div>

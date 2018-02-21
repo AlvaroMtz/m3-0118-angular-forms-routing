@@ -1,0 +1,9 @@
+<div>
+  <span> {{ q.text }} </span>
+  <small> by {{ q.author }} </small>
+  <progress max="100" value="{{damage}}"></progress>
+  <p> Alberto ha dado {{contador.getCount()}} vueltas</p>
+
+  <button (click)="onDelete($event)"> Delete </button>
+  <button (click)="cuentaAlberto()"> ¡Date una vuelta Alberto! </button>
+</div>
